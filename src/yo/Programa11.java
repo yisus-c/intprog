@@ -1,13 +1,12 @@
 /**
- * @version 1.00 30/11/2021
- * @author Jesús Guevara, Ludwicka Aguirre 
+ * @(#)Programa11.java	1.00 	30/11/2021
  */
 package yo;
 import java.io.IOException;
 import java.util.Scanner;
 /**
- * @author gueva
- *
+ * @version 1.00 30/11/2021
+ * @author Jesús Guevara, Ludwicka Aguirre
  */
 public class Programa11 {
 
@@ -15,7 +14,6 @@ public class Programa11 {
 	 * @param args
 	 */
 	public static void main(String[] args)throws IOException {
-		// TODO Auto-generated method stub
 		Scanner teclado = new Scanner(System.in);
 		int n = 0;
 		int id = 0;
