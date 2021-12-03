@@ -17,8 +17,8 @@ public class Programa10 {
 	 */
 	public static void main(String[] args)throws IOException {
 		Scanner teclado = new Scanner(System.in);
-		int id = 0;
-		char abc [] = new char[27];
+		int id = 0;  //para repetir en caso de exepciones
+		char abc [] = new char[27]; // letras del abecedario
 		abc[0] = 'A';
 		abc[1] = 'B';
 		abc[2] = 'C';
@@ -46,8 +46,9 @@ public class Programa10 {
 		abc[24] = 'X';
 		abc[25] = 'Y';
 		abc[26] = 'Z';
-		int n;
-		System.out.println("Algoritmo que imprime las letras del abecedario "
+		int n; //numero que introduce el usuario
+		String r; //respuesta de si desea repetir o no 
+		System.out.println("Programa que imprime las letras del abecedario "
 				+ "dado un numero N");
 		do {
 			try{
@@ -68,7 +69,7 @@ public class Programa10 {
 			} catch (java.lang.NumberFormatException e) {
 					System.out.println("Error: tipo de dato no coincide");
 					id = 0;
-			}
+			} 
 		} while (id==0);
 	}
 

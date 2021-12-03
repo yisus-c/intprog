@@ -17,7 +17,7 @@ public class Programa11 {
 		Scanner teclado = new Scanner(System.in);
 		int n = 0;
 		int id = 0;
-		String r;
+		String r; // respuesta de si desea repetir o no
 		System.out.println("Programa para mostrar el histograma de datos "
 				+ "de un arrego");
 		do {
@@ -44,10 +44,10 @@ public class Programa11 {
 			} finally{
 				System.out.println("¿Desea repetir?S/N");
 				r = teclado.nextLine();
-				if(r.equals("S") || r.equals("s")){
+				if(r.equals("S") || r.equals("s")) {
 					id = 0;
 				}
-				if(r.equals("N") || r.equals("n")){
+				else if(r.equals("N") || r.equals("n")) {
 					id = 1;
 				}
 			}

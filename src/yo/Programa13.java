@@ -20,7 +20,7 @@ public class Programa13 {
 		Scanner teclado = new Scanner (System.in);
 		int n = 0;
 		int id = 0;
-		String r;
+		String r; // respuesta de si desea repetir o no
 		System.out.println("Programa para mostrar un arreglo de n elementos"
 				+ "en orden inverso");
 		do {
@@ -28,7 +28,7 @@ public class Programa13 {
 				System.out.println("Introduce la cantidad entera de elementos "
 						+ "del arreglo: ");
 				n = Integer.parseInt(teclado.nextLine());
-				if(n>0){
+				if (n > 0) {
 					int elem[] = new int [n];
 					for (int i = 0; i < elem.length; i++) {
 						System.out.println("Introduce el valor entero del "
@@ -50,10 +50,9 @@ public class Programa13 {
 			} finally {
 				System.out.println("¿Desea repetir?S/N");
 				r = teclado.nextLine();
-				if(r.equals("S") || r.equals("s")){
+				if (r.equals("S") || r.equals("s")) {
 					id = 0;
-				}
-				if(r.equals("N") || r.equals("n")){
+				} else if (r.equals("N") || r.equals("n")) {
 					id = 1;
 				}
 			}
