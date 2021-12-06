@@ -36,10 +36,13 @@ public class Menu {
 				System.out.println("13.- Programa para mostrar un arreglo de n elementos "
 						+ "en orden inverso");
 				System.out.println("16.- Programa para invertir los elementos de un arreglo "
-						+ "y guardar el nuevo orden en otro arreglo");
+						+ "y guardar el nuevo ");
+						System.out.println(" orden en otro arreglo");
 				System.out.println("17.- Programa que imprime un vector, busca un valor"
-						+ " dado por el usurio, imprime las posiciones impares e "
-						+ " imprime los multiplos de 3 de las posiciones impares");
+						+ " dado por el usuario, ");
+						System.out.println(" imprime las posiciones impares e"
+								+ " imprime los multiplos de 3 de las posiciones");
+								System.out.println(" impares");
 				System.out.println("Introduce el numero del programa de la lista"
 						+ " que desees ejecutar: ");
 				System.out.println("(escriba 0 para salir)");
@@ -404,6 +407,7 @@ public class Menu {
 				
 			} catch(Exception e){
 				System.out.println("Tipo de dato no valido, intente de nuevo");
+				System.out.println();
 				fstid = 0;
 			}
 		} while (fstid == 0);
